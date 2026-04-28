@@ -10,11 +10,11 @@ source:
   sha256: b1798265947204ea95516b4e48e9f78bb25103734ab5a22922011eca825fe459
 
 build:
-  entry_points:
-    - astropy-package-template-example = packagename.example_mod:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
+  entry_points:
+    - astropy-package-template-example = packagename.example_mod:main
 
 requirements:
   host:
