@@ -36,7 +36,6 @@ test:
     - image_registration
   commands:
     - pip check
-    - astropy-package-template-example --help
   requires:
     - pip
     - python {{ python_min }}
